@@ -1,4 +1,8 @@
+### to do Nastasia: test code in docker
+
 hash('fixed')
+
+### manifest
 add_field('fixed.@context', 'http://iiif.io/presentation/2/context.json')
 copy_field('id', 'fixed.@id')
 prepend('fixed.@id','http://free.iiifhosting.com/iiif/')
@@ -10,10 +14,14 @@ copy_field('label', 'fixed.label')
 copy_field('rechten', 'fixed.license')
 copy_field('PID', 'fixed.seeAlso')
 
+
+### sequences
 set_array('fixed.sequences')
 add_field('fixed.sequences.$append.@type', 'sc:Sequence')
+
+
+### canvases
 set_array('fixed.sequences.$last.canvases')
-set_hash('fixed.sequences.$last.canvases.$last.images')
 
 split_field('afbeeldingen', ',')
 
@@ -21,18 +29,31 @@ hash('label_en_id')
 add_field('t.id.first', 'http://free.iiifhosting.com/iiif/')
 add_field('t.id.last', '/canvas.json')
 
+### get label and id for each canvas
 do list(path: afbeeldingen, var: a)
     split_field('a', ':')
     copy_field('a.0', 'label_en_id.$append.label')
     copy_field('a.1', 'label_en_id.$last.id')
 end
 
+### append label and id for each canvas
 do list(path: label_en_id, var: l)
     copy_field('l.id', 'fixed.sequences.$last.canvases.$append.@id')
     prepend('fixed.sequences.$last.canvases.$last.@id', 'http://free.iiifhosting.com/iiif/')
     append('fixed.sequences.$last.canvases.$last.@id', '/canvas.json')
     copy_field('l.label', 'fixed.sequences.$last.canvases.$last.label')
 end
+
+### images
+set_hash('fixed.sequences.$last.canvases.*.images')
+add_field('fixed.sequences.$last.canvases.*.images.@type', 'oa:Annotation')
+add_field('fixed.sequences.$last.canvases.*.images.motivation', 'sc:painting')
+copy_field('fixed.sequences.$last.canvases.$last.@id','fixed.sequences.$last.canvases.*.images.on')
+
+
+### resource
+
+
 
 retain(fixed)
 move_field(fixed, .)
