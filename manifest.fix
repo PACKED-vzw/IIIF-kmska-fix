@@ -1,12 +1,19 @@
 hash('fixed')
 add_field('fixed.@context', 'http://iiif.io/presentation/2/context.json')
+copy_field('id', 'fixed.@id')
+prepend('fixed.@id','http://free.iiifhosting.com/iiif/')
+append('fixed.@id', '/manifest.json')
 add_field('fixed.@type', 'sc:Manifest')
 add_field('fixed.attribution', 'KMSKA')
 add_field('fixed.logo', 'http://www.kmska.be/static/site_images/lgo_kmska.gif')
+copy_field('label', 'fixed.label')
+copy_field('rechten', 'fixed.license')
+copy_field('PID', 'fixed.seeAlso')
 
 set_array('fixed.sequences')
 add_field('fixed.sequences.$append.@type', 'sc:Sequence')
 set_array('fixed.sequences.$last.canvases')
+set_hash('fixed.sequences.$last.canvases.$last.images')
 
 split_field('afbeeldingen', ',')
 
@@ -21,7 +28,7 @@ do list(path: afbeeldingen, var: a)
 end
 
 do list(path: label_en_id, var: l)
-    copy_field(l.id, 'fixed.sequences.$last.canvases.$append.@id')
+    copy_field('l.id', 'fixed.sequences.$last.canvases.$append.@id')
     prepend('fixed.sequences.$last.canvases.$last.@id', 'http://free.iiifhosting.com/iiif/')
     append('fixed.sequences.$last.canvases.$last.@id', '/canvas.json')
     copy_field('l.label', 'fixed.sequences.$last.canvases.$last.label')
