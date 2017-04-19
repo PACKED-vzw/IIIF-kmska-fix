@@ -49,6 +49,7 @@ end
 
 ### append label and id for each canvas
 do list(path: label_en_id, var: l)
+    ### structure canvas
     copy_field('canvas-type', 'fixed.sequences.$last.canvases.$append.@type')
     copy_field('l.id', 'fixed.sequences.$last.canvases.$last.@id')
     prepend('fixed.sequences.$last.canvases.$last.@id', 'http://free.iiifhosting.com/iiif/')
@@ -56,28 +57,30 @@ do list(path: label_en_id, var: l)
     copy_field('l.label', 'fixed.sequences.$last.canvases.$last.label')
     add_field('fixed.sequences.$last.canvases.$last.hoogte', 'hoogte')
     add_field('fixed.sequences.$last.canvases.$last.breedte', 'breedte')
+
+    ### structure images
     set_array('fixed.sequences.$last.canvases.$last.images')
-    copy_field('image-type', 'fixed.sequences.$last.canvases.$last.images.$append.@type')
-    copy_field('image-motivation', 'fixed.sequences.$last.canvases.$last.images.$last.motivation')
+    #copy_field('image-type', 'fixed.sequences.$last.canvases.$last.images.$append.@type')
+    #copy_field('image-motivation', 'fixed.sequences.$last.canvases.$last.images.$last.motivation')
     copy_field('fixed.sequences.$last.canvases.$last.@id','fixed.sequences.$last.canvases.$last.images.$last.on')
+
+    ### structure resource
     set_hash('fixed.sequences.$last.canvases.$last.images.$last.resource','@id': 'id','@type': 'dctypes:Image', 'format': 'image/jpeg','hoogte': 'hoogte','breedte': 'breedte')
+    copy_field('l.id', 'fixed.sequences.$last.canvases.$last.images.$last.resource.@id')
+    prepend('fixed.sequences.$last.canvases.$last.images.$last.resource.@id', 'http://free.iiifhosting.com/iiif/')
+    append('fixed.sequences.$last.canvases.$last.images.$last.resource.@id', '/full/full/0/default.jpg')
     set_hash('fixed.sequences.$last.canvases.$last.images.$last.resource.service', '@context': 'context', '@id': 'id', 'profile': 'profile')
-    copy_field('service-context', 'fixed.sequences.$last.canvases.$last.images.$last.resource.service.@context')
-    copy_field('service-profile', 'fixed.sequences.$last.canvases.$last.images.$last.resource.service.profile')
+    copy_field('l.id', 'fixed.sequences.$last.canvases.$last.images.$last.resource.service.@id')
+    prepend('fixed.sequences.$last.canvases.$last.images.$last.resource.service.@id', 'http://free.iiifhosting.com/iiif/')
+    #copy_field('service-context', 'fixed.sequences.$last.canvases.$last.images.$last.resource.service.@context')
+    #copy_field('service-profile', 'fixed.sequences.$last.canvases.$last.images.$last.resource.service.profile')
 end
 
 ### images
-#add_field('fixed.sequences.$last.canvases.*.images.$last.@type', 'oa:Annotation')
-#add_field('fixed.sequences.$last.canvases.*.images.last.motivation', 'sc:painting')
-#copy_field('fixed.sequences.$last.canvases.$last.@id','fixed.sequences.$last.canvases.*.images.$last.on')
-
-
-### resource
-#set_hash('fixed.sequences.$last.canvases.*.images.$last.resource','@id': 'id','@type': 'dctypes:Image', 'format': 'image/jpeg','hoogte': 'hoogte','breedte': 'breedte')
-#copy_field('fixed.sequences.$last.canvases.$append.id1', 'fixed.sequences.$last.canvases.*.images.$last.resource.@id')
-
-#add_field('fixed.sequences.$last.canvases.*.images.$last.resource.@type', 'dctypes:Image')
-#add_field('fixed.sequences.$last.canvases.*.images.$last.resource.format', 'image/jpeg')
+copy_field('image-type', 'fixed.sequences.$last.canvases.*.images.$last.@type')
+copy_field('image-motivation', 'fixed.sequences.$last.canvases.*.images.$last.motivation')
+copy_field('service-context', 'fixed.sequences.$last.canvases.*.images.$last.resource.service.@context')
+copy_field('service-profile', 'fixed.sequences.$last.canvases.*.images.$last.resource.service.profile')
 
 
 retain(fixed)
