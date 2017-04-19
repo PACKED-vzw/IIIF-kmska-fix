@@ -1,0 +1,378 @@
+[{
+  "attribution": "KMSKA",
+  "logo": "http://www.kmska.be/static/site_images/lgo_kmska.gif",
+  "seeAlso": "http://www.example.org/KMSKA/work/1",
+  "label": "INVnr.1, Rubens P.P., Jezus valt van het kruis",
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "@context": "http://iiif.io/presentation/2/context.json",
+  "@id": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/manifest.json",
+  "sequences": [{
+    "@type": "sc:Sequence",
+    "canvases": [{
+      "label": "voorkant",
+      "breedte": "breedte",
+      "@type": "sc:Canvas",
+      "@id": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/canvas.json",
+      "images": [{
+        "on": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/canvas.json",
+        "motivation": "sc:painting",
+        "@type": "oa:Annotation",
+        "resource": {
+          "@id": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/full/full/0/default.jpg",
+          "hoogte": "hoogte",
+          "service": {
+            "profile": "http://iiif.io/api/image/2/profiles/level2.json",
+            "@context": "http://iiif.io/api.image/2/context.json",
+            "@id": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc"
+          },
+          "@type": "dctypes:Image",
+          "format": "image/jpeg",
+          "breedte": "breedte"
+        }
+      }],
+      "hoogte": "hoogte"
+    }, {
+      "@id": "http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee/canvas.json",
+      "images": [{
+        "on": "http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee/canvas.json",
+        "motivation": "sc:painting",
+        "@type": "oa:Annotation",
+        "resource": {
+          "@id": "http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee/full/full/0/default.jpg",
+          "hoogte": "hoogte",
+          "@type": "dctypes:Image",
+          "service": {
+            "profile": "http://iiif.io/api/image/2/profiles/level2.json",
+            "@context": "http://iiif.io/api.image/2/context.json",
+            "@id": "http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee"
+          },
+          "format": "image/jpeg",
+          "breedte": "breedte"
+        }
+      }],
+      "hoogte": "hoogte",
+      "label": "achterkant",
+      "breedte": "breedte",
+      "@type": "sc:Canvas"
+    }, {
+      "label": "zijkant",
+      "breedte": "breedte",
+      "@type": "sc:Canvas",
+      "@id": "http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a/canvas.json",
+      "images": [{
+        "resource": {
+          "hoogte": "hoogte",
+          "@id": "http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a/full/full/0/default.jpg",
+          "service": {
+            "@context": "http://iiif.io/api.image/2/context.json",
+            "profile": "http://iiif.io/api/image/2/profiles/level2.json",
+            "@id": "http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a"
+          },
+          "@type": "dctypes:Image",
+          "format": "image/jpeg",
+          "breedte": "breedte"
+        },
+        "on": "http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a/canvas.json",
+        "motivation": "sc:painting",
+        "@type": "oa:Annotation"
+      }],
+      "hoogte": "hoogte"
+    }]
+  }],
+  "@type": "sc:Manifest"
+}, {
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "@context": "http://iiif.io/presentation/2/context.json",
+  "label": "INVnr.2, Ensor J., Gekke maskers",
+  "seeAlso": "http://www.example.org/KMSKA/work/2",
+  "logo": "http://www.kmska.be/static/site_images/lgo_kmska.gif",
+  "attribution": "KMSKA",
+  "@type": "sc:Manifest",
+  "sequences": [{
+    "canvases": [{
+      "@id": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/canvas.json",
+      "images": [{
+        "motivation": "sc:painting",
+        "on": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/canvas.json",
+        "@type": "oa:Annotation",
+        "resource": {
+          "breedte": "breedte",
+          "@type": "dctypes:Image",
+          "service": {
+            "@id": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558",
+            "profile": "http://iiif.io/api/image/2/profiles/level2.json",
+            "@context": "http://iiif.io/api.image/2/context.json"
+          },
+          "format": "image/jpeg",
+          "@id": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/full/full/0/default.jpg",
+          "hoogte": "hoogte"
+        }
+      }],
+      "hoogte": "hoogte",
+      "label": "voorkant",
+      "breedte": "breedte",
+      "@type": "sc:Canvas"
+    }, {
+      "breedte": "breedte",
+      "@type": "sc:Canvas",
+      "label": "zijkant",
+      "hoogte": "hoogte",
+      "@id": "http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565/canvas.json",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565/canvas.json",
+        "resource": {
+          "breedte": "breedte",
+          "format": "image/jpeg",
+          "service": {
+            "@id": "http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565",
+            "@context": "http://iiif.io/api.image/2/context.json",
+            "profile": "http://iiif.io/api/image/2/profiles/level2.json"
+          },
+          "@type": "dctypes:Image",
+          "@id": "http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565/full/full/0/default.jpg",
+          "hoogte": "hoogte"
+        }
+      }]
+    }],
+    "@type": "sc:Sequence"
+  }],
+  "@id": "http://free.iiifhosting.com/iiif/d772d45d796e58b68ed46f696d97f4819e5e84fdd252847afe4b0cc84793a88d/manifest.json"
+}, {
+  "attribution": "KMSKA",
+  "@context": "http://iiif.io/presentation/2/context.json",
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "label": "INVnr.3, Teniers D., Het Steen",
+  "seeAlso": "http://www.example.org/KMSKA/work/3",
+  "logo": "http://www.kmska.be/static/site_images/lgo_kmska.gif",
+  "@id": "http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565/manifest.json",
+  "@type": "sc:Manifest",
+  "sequences": [{
+    "canvases": [{
+      "breedte": "breedte",
+      "@type": "sc:Canvas",
+      "label": "voorkant",
+      "hoogte": "hoogte",
+      "@id": "http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee/canvas.json",
+      "images": [{
+        "resource": {
+          "breedte": "breedte",
+          "service": {
+            "profile": "http://iiif.io/api/image/2/profiles/level2.json",
+            "@context": "http://iiif.io/api.image/2/context.json",
+            "@id": "http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee"
+          },
+          "@type": "dctypes:Image",
+          "format": "image/jpeg",
+          "hoogte": "hoogte",
+          "@id": "http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee/full/full/0/default.jpg"
+        },
+        "motivation": "sc:painting",
+        "on": "http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee/canvas.json",
+        "@type": "oa:Annotation"
+      }]
+    }, {
+      "hoogte": "hoogte",
+      "images": [{
+        "resource": {
+          "breedte": "breedte",
+          "service": {
+            "profile": "http://iiif.io/api/image/2/profiles/level2.json",
+            "@context": "http://iiif.io/api.image/2/context.json",
+            "@id": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558"
+          },
+          "format": "image/jpeg",
+          "@type": "dctypes:Image",
+          "@id": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/full/full/0/default.jpg",
+          "hoogte": "hoogte"
+        },
+        "motivation": "sc:painting",
+        "on": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/canvas.json",
+        "@type": "oa:Annotation"
+      }],
+      "@id": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/canvas.json",
+      "@type": "sc:Canvas",
+      "breedte": "breedte",
+      "label": "achterkant"
+    }],
+    "@type": "sc:Sequence"
+  }]
+}, {
+  "attribution": "KMSKA",
+  "label": "INVnr.4, Van Gogh, Aardappeleters",
+  "seeAlso": "http://www.example.org/KMSKA/work/4",
+  "logo": "http://www.kmska.be/static/site_images/lgo_kmska.gif",
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "@context": "http://iiif.io/presentation/2/context.json",
+  "@id": "http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a/manifest.json",
+  "sequences": [{
+    "canvases": [{
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565/canvas.json",
+        "resource": {
+          "hoogte": "hoogte",
+          "@id": "http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565/full/full/0/default.jpg",
+          "breedte": "breedte",
+          "service": {
+            "@id": "http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565",
+            "profile": "http://iiif.io/api/image/2/profiles/level2.json",
+            "@context": "http://iiif.io/api.image/2/context.json"
+          },
+          "format": "image/jpeg",
+          "@type": "dctypes:Image"
+        }
+      }],
+      "@id": "http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565/canvas.json",
+      "hoogte": "hoogte",
+      "label": "voorkant",
+      "@type": "sc:Canvas",
+      "breedte": "breedte"
+    }, {
+      "hoogte": "hoogte",
+      "@id": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/canvas.json",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/canvas.json",
+        "resource": {
+          "breedte": "breedte",
+          "@type": "dctypes:Image",
+          "service": {
+            "@id": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc",
+            "@context": "http://iiif.io/api.image/2/context.json",
+            "profile": "http://iiif.io/api/image/2/profiles/level2.json"
+          },
+          "format": "image/jpeg",
+          "@id": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/full/full/0/default.jpg",
+          "hoogte": "hoogte"
+        }
+      }],
+      "breedte": "breedte",
+      "@type": "sc:Canvas",
+      "label": "achterkant"
+    }, {
+      "breedte": "breedte",
+      "@type": "sc:Canvas",
+      "label": "zijkant",
+      "hoogte": "hoogte",
+      "@id": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/canvas.json",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/canvas.json",
+        "resource": {
+          "hoogte": "hoogte",
+          "@id": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/full/full/0/default.jpg",
+          "service": {
+            "@id": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558",
+            "profile": "http://iiif.io/api/image/2/profiles/level2.json",
+            "@context": "http://iiif.io/api.image/2/context.json"
+          },
+          "format": "image/jpeg",
+          "@type": "dctypes:Image",
+          "breedte": "breedte"
+        }
+      }]
+    }],
+    "@type": "sc:Sequence"
+  }],
+  "@type": "sc:Manifest"
+}, {
+  "logo": "http://www.kmska.be/static/site_images/lgo_kmska.gif",
+  "label": "INVnr.5, Brueghel, De boerenbruiloft",
+  "seeAlso": "http://www.example.org/KMSKA/work/5",
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "@context": "http://iiif.io/presentation/2/context.json",
+  "attribution": "KMSKA",
+  "sequences": [{
+    "@type": "sc:Sequence",
+    "canvases": [{
+      "label": "voorkant",
+      "@type": "sc:Canvas",
+      "breedte": "breedte",
+      "images": [{
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "on": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/canvas.json",
+        "resource": {
+          "@id": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/full/full/0/default.jpg",
+          "hoogte": "hoogte",
+          "format": "image/jpeg",
+          "service": {
+            "profile": "http://iiif.io/api/image/2/profiles/level2.json",
+            "@context": "http://iiif.io/api.image/2/context.json",
+            "@id": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc"
+          },
+          "@type": "dctypes:Image",
+          "breedte": "breedte"
+        }
+      }],
+      "@id": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/canvas.json",
+      "hoogte": "hoogte"
+    }]
+  }],
+  "@type": "sc:Manifest",
+  "@id": "http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee/manifest.json"
+}, {
+  "@id": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/manifest.json",
+  "@type": "sc:Manifest",
+  "sequences": [{
+    "canvases": [{
+      "breedte": "breedte",
+      "@type": "sc:Canvas",
+      "label": "voorkant",
+      "hoogte": "hoogte",
+      "@id": "http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a/canvas.json",
+      "images": [{
+        "resource": {
+          "service": {
+            "@id": "http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a",
+            "@context": "http://iiif.io/api.image/2/context.json",
+            "profile": "http://iiif.io/api/image/2/profiles/level2.json"
+          },
+          "@type": "dctypes:Image",
+          "format": "image/jpeg",
+          "breedte": "breedte",
+          "hoogte": "hoogte",
+          "@id": "http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a/full/full/0/default.jpg"
+        },
+        "on": "http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a/canvas.json",
+        "motivation": "sc:painting",
+        "@type": "oa:Annotation"
+      }]
+    }, {
+      "hoogte": "hoogte",
+      "@id": "http://free.iiifhosting.com/iiif/d772d45d796e58b68ed46f696d97f4819e5e84fdd252847afe4b0cc84793a88d/canvas.json",
+      "images": [{
+        "@type": "oa:Annotation",
+        "on": "http://free.iiifhosting.com/iiif/d772d45d796e58b68ed46f696d97f4819e5e84fdd252847afe4b0cc84793a88d/canvas.json",
+        "motivation": "sc:painting",
+        "resource": {
+          "@type": "dctypes:Image",
+          "service": {
+            "profile": "http://iiif.io/api/image/2/profiles/level2.json",
+            "@context": "http://iiif.io/api.image/2/context.json",
+            "@id": "http://free.iiifhosting.com/iiif/d772d45d796e58b68ed46f696d97f4819e5e84fdd252847afe4b0cc84793a88d"
+          },
+          "format": "image/jpeg",
+          "breedte": "breedte",
+          "@id": "http://free.iiifhosting.com/iiif/d772d45d796e58b68ed46f696d97f4819e5e84fdd252847afe4b0cc84793a88d/full/full/0/default.jpg",
+          "hoogte": "hoogte"
+        }
+      }],
+      "breedte": "breedte",
+      "@type": "sc:Canvas",
+      "label": "achterkant"
+    }],
+    "@type": "sc:Sequence"
+  }],
+  "attribution": "KMSKA",
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "@context": "http://iiif.io/presentation/2/context.json",
+  "label": "INVnr.6, Rubens P.P., Jezus op het kruis",
+  "seeAlso": "http://www.example.org/KMSKA/work/6",
+  "logo": "http://www.kmska.be/static/site_images/lgo_kmska.gif"
+}]

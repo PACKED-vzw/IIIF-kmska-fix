@@ -1,7 +1,11 @@
-### to do Nastasia: test code in docker
+### to do:
+### import json file for height and width (jsonfile = url+id+ '/image.json')
+### create json file for each manifest
+
 hash('fixed')
 
 ### set fixed values
+#add_field('url', 'http://free.iiifhosting.com/iiif/')
 add_field('iiif-context', 'http://iiif.io/presentation/2/context.json')
 add_field('manifest-type', 'sc:Manifest')
 add_field('attribution', 'KMSKA')
@@ -19,6 +23,7 @@ add_field('service-profile', 'http://iiif.io/api/image/2/profiles/level2.json')
 copy_field('iiif-context', 'fixed.@context')
 copy_field('id', 'fixed.@id')
 prepend('fixed.@id','http://free.iiifhosting.com/iiif/')
+#copy_field('url', 'fixed.@id.$prepend')
 append('fixed.@id', '/manifest.json')
 copy_field('manifest-type', 'fixed.@type')
 copy_field('label', 'fixed.label')
@@ -74,6 +79,8 @@ do list(path: label_en_id, var: l)
     prepend('fixed.sequences.$last.canvases.$last.images.$last.resource.service.@id', 'http://free.iiifhosting.com/iiif/')
     #copy_field('service-context', 'fixed.sequences.$last.canvases.$last.images.$last.resource.service.@context')
     #copy_field('service-profile', 'fixed.sequences.$last.canvases.$last.images.$last.resource.service.profile')
+
+
 end
 
 ### images
