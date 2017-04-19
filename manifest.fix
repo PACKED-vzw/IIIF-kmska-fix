@@ -5,7 +5,7 @@
 hash('fixed')
 
 ### set fixed values
-#add_field('url', 'http://free.iiifhosting.com/iiif/')
+add_field('url', 'http://free.iiifhosting.com/iiif/')
 add_field('iiif-context', 'http://iiif.io/presentation/2/context.json')
 add_field('manifest-type', 'sc:Manifest')
 add_field('attribution', 'KMSKA')
@@ -21,9 +21,8 @@ add_field('service-profile', 'http://iiif.io/api/image/2/profiles/level2.json')
 
 ### structure manifest
 copy_field('iiif-context', 'fixed.@context')
-copy_field('id', 'fixed.@id')
-prepend('fixed.@id','http://free.iiifhosting.com/iiif/')
-#copy_field('url', 'fixed.@id.$prepend')
+paste('fixed.@id', 'url', 'id')    ## deze code werkt niet bij @id
+replace_all('fixed.@id', ' ', '')  ## in canvas, resource en service. waarom?
 append('fixed.@id', '/manifest.json')
 copy_field('manifest-type', 'fixed.@type')
 copy_field('label', 'fixed.label')
@@ -34,7 +33,6 @@ copy_field('PID', 'fixed.seeAlso')
 
 ### structure sequences
 set_array('fixed.sequences')
-#add_field('fixed.sequences.$append.@type', 'sc:Sequence')
 copy_field('sequence-type', 'fixed.sequences.$append.@type')
 set_array('fixed.sequences.$last.canvases')
 
