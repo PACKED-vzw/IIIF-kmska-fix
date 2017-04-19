@@ -1,1 +1,118 @@
-[{"sequences":[{"canvases":[{"@id":"http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/canvas.json","label":"voorkant"},{"label":"achterkant","@id":"http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee/canvas.json"},{"label":"zijkant","@id":"http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a/canvas.json"}],"@type":"sc:Sequence"}],"logo":"http://www.kmska.be/static/site_images/lgo_kmska.gif","@type":"sc:Manifest","label":"INVnr.1, Rubens P.P., Jezus valt van het kruis","license":"https://creativecommons.org/publicdomain/zero/1.0/","@context":"http://iiif.io/presentation/2/context.json","@id":"http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/manifest.json","seeAlso":"http://www.example.org/KMSKA/work/1","attribution":"KMSKA"},{"@id":"http://free.iiifhosting.com/iiif/d772d45d796e58b68ed46f696d97f4819e5e84fdd252847afe4b0cc84793a88d/manifest.json","seeAlso":"http://www.example.org/KMSKA/work/2","attribution":"KMSKA","@type":"sc:Manifest","logo":"http://www.kmska.be/static/site_images/lgo_kmska.gif","sequences":[{"canvases":[{"label":"voorkant","@id":"http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/canvas.json"},{"@id":"http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565/canvas.json","label":"zijkant"}],"@type":"sc:Sequence"}],"license":"https://creativecommons.org/publicdomain/zero/1.0/","label":"INVnr.2, Ensor J., Gekke maskers","@context":"http://iiif.io/presentation/2/context.json"},{"sequences":[{"canvases":[{"@id":"http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee/canvas.json","label":"voorkant"},{"label":"achterkant","@id":"http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/canvas.json"}],"@type":"sc:Sequence"}],"@type":"sc:Manifest","logo":"http://www.kmska.be/static/site_images/lgo_kmska.gif","@context":"http://iiif.io/presentation/2/context.json","label":"INVnr.3, Teniers D., Het Steen","license":"https://creativecommons.org/publicdomain/zero/1.0/","attribution":"KMSKA","@id":"http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565/manifest.json","seeAlso":"http://www.example.org/KMSKA/work/3"},{"logo":"http://www.kmska.be/static/site_images/lgo_kmska.gif","@type":"sc:Manifest","sequences":[{"@type":"sc:Sequence","canvases":[{"@id":"http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565/canvas.json","label":"voorkant"},{"@id":"http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/canvas.json","label":"achterkant"},{"label":"zijkant","@id":"http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/canvas.json"}]}],"license":"https://creativecommons.org/publicdomain/zero/1.0/","label":"INVnr.4, Van Gogh, Aardappeleters","@context":"http://iiif.io/presentation/2/context.json","seeAlso":"http://www.example.org/KMSKA/work/4","@id":"http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a/manifest.json","attribution":"KMSKA"},{"@context":"http://iiif.io/presentation/2/context.json","license":"https://creativecommons.org/publicdomain/zero/1.0/","label":"INVnr.5, Brueghel, De boerenbruiloft","@type":"sc:Manifest","logo":"http://www.kmska.be/static/site_images/lgo_kmska.gif","sequences":[{"@type":"sc:Sequence","canvases":[{"@id":"http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/canvas.json","label":"voorkant"}]}],"attribution":"KMSKA","seeAlso":"http://www.example.org/KMSKA/work/5","@id":"http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee/manifest.json"},{"logo":"http://www.kmska.be/static/site_images/lgo_kmska.gif","@type":"sc:Manifest","sequences":[{"@type":"sc:Sequence","canvases":[{"label":"voorkant","@id":"http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a/canvas.json"},{"label":"achterkant","@id":"http://free.iiifhosting.com/iiif/d772d45d796e58b68ed46f696d97f4819e5e84fdd252847afe4b0cc84793a88d/canvas.json"}]}],"@context":"http://iiif.io/presentation/2/context.json","license":"https://creativecommons.org/publicdomain/zero/1.0/","label":"INVnr.6, Rubens P.P., Jezus op het kruis","attribution":"KMSKA","seeAlso":"http://www.example.org/KMSKA/work/6","@id":"http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/manifest.json"}]
+[{
+    "sequences": [{
+        "canvases": [{
+            "@id": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/canvas.json",
+            "label": "voorkant"
+        }, {
+            "label": "achterkant",
+            "@id": "http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee/canvas.json"
+        }, {
+            "label": "zijkant",
+            "@id": "http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a/canvas.json"
+        }],
+        "@type": "sc:Sequence"
+    }],
+    "logo": "http://www.kmska.be/static/site_images/lgo_kmska.gif",
+    "@type": "sc:Manifest",
+    "label": "INVnr.1, Rubens P.P., Jezus valt van het kruis",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "@context": "http://iiif.io/presentation/2/context.json",
+    "@id": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/manifest.json",
+    "seeAlso": "http://www.example.org/KMSKA/work/1",
+    "attribution": "KMSKA"
+}, {
+    "@id": "http://free.iiifhosting.com/iiif/d772d45d796e58b68ed46f696d97f4819e5e84fdd252847afe4b0cc84793a88d/manifest.json",
+    "seeAlso": "http://www.example.org/KMSKA/work/2",
+    "attribution": "KMSKA",
+    "@type": "sc:Manifest",
+    "logo": "http://www.kmska.be/static/site_images/lgo_kmska.gif",
+    "sequences": [{
+        "canvases": [{
+            "label": "voorkant",
+            "@id": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/canvas.json"
+        }, {
+            "@id": "http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565/canvas.json",
+            "label": "zijkant"
+        }],
+        "@type": "sc:Sequence"
+    }],
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "label": "INVnr.2, Ensor J., Gekke maskers",
+    "@context": "http://iiif.io/presentation/2/context.json"
+}, {
+    "sequences": [{
+        "canvases": [{
+            "@id": "http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee/canvas.json",
+            "label": "voorkant"
+        }, {
+            "label": "achterkant",
+            "@id": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/canvas.json"
+        }],
+        "@type": "sc:Sequence"
+    }],
+    "@type": "sc:Manifest",
+    "logo": "http://www.kmska.be/static/site_images/lgo_kmska.gif",
+    "@context": "http://iiif.io/presentation/2/context.json",
+    "label": "INVnr.3, Teniers D., Het Steen",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "KMSKA",
+    "@id": "http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565/manifest.json",
+    "seeAlso": "http://www.example.org/KMSKA/work/3"
+}, {
+    "logo": "http://www.kmska.be/static/site_images/lgo_kmska.gif",
+    "@type": "sc:Manifest",
+    "sequences": [{
+        "@type": "sc:Sequence",
+        "canvases": [{
+            "@id": "http://free.iiifhosting.com/iiif/95f013a33d3e92dc741449d60a4616fd1dcbfe50b5341ad218e8ab3d590de565/canvas.json",
+            "label": "voorkant"
+        }, {
+            "@id": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/canvas.json",
+            "label": "achterkant"
+        }, {
+            "label": "zijkant",
+            "@id": "http://free.iiifhosting.com/iiif/3bd08e57bc1b1b164f6b3914f852b5b33fdbae1c9d0cf75fda843577debc0558/canvas.json"
+        }]
+    }],
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "label": "INVnr.4, Van Gogh, Aardappeleters",
+    "@context": "http://iiif.io/presentation/2/context.json",
+    "seeAlso": "http://www.example.org/KMSKA/work/4",
+    "@id": "http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a/manifest.json",
+    "attribution": "KMSKA"
+}, {
+    "@context": "http://iiif.io/presentation/2/context.json",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "label": "INVnr.5, Brueghel, De boerenbruiloft",
+    "@type": "sc:Manifest",
+    "logo": "http://www.kmska.be/static/site_images/lgo_kmska.gif",
+    "sequences": [{
+        "@type": "sc:Sequence",
+        "canvases": [{
+            "@id": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/canvas.json",
+            "label": "voorkant"
+        }]
+    }],
+    "attribution": "KMSKA",
+    "seeAlso": "http://www.example.org/KMSKA/work/5",
+    "@id": "http://free.iiifhosting.com/iiif/10d9b1bdcf32a45b44028c5d9cee871ff066a6ada8ae131f7786ff6d19c70eee/manifest.json"
+}, {
+    "logo": "http://www.kmska.be/static/site_images/lgo_kmska.gif",
+    "@type": "sc:Manifest",
+    "sequences": [{
+        "@type": "sc:Sequence",
+        "canvases": [{
+            "label": "voorkant",
+            "@id": "http://free.iiifhosting.com/iiif/628fddde894ab28f9024390ae38b3059c31b4a6c7bf83c25a846c302e49e888a/canvas.json"
+        }, {
+            "label": "achterkant",
+            "@id": "http://free.iiifhosting.com/iiif/d772d45d796e58b68ed46f696d97f4819e5e84fdd252847afe4b0cc84793a88d/canvas.json"
+        }]
+    }],
+    "@context": "http://iiif.io/presentation/2/context.json",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "label": "INVnr.6, Rubens P.P., Jezus op het kruis",
+    "attribution": "KMSKA",
+    "seeAlso": "http://www.example.org/KMSKA/work/6",
+    "@id": "http://free.iiifhosting.com/iiif/764cea69b7962b84d2b9924281f9da381351dc729d6a35ae08ce13de959012bc/manifest.json"
+}]
