@@ -58,8 +58,8 @@ do list(path: label_en_id, var: l)
     prepend('fixed.sequences.$last.canvases.$last.@id', 'http://free.iiifhosting.com/iiif/')
     append('fixed.sequences.$last.canvases.$last.@id', '/canvas.json')
     copy_field('l.label', 'fixed.sequences.$last.canvases.$last.label')
-    add_field('fixed.sequences.$last.canvases.$last.hoogte', 'hoogte')
-    add_field('fixed.sequences.$last.canvases.$last.breedte', 'breedte')
+    add_field('fixed.sequences.$last.canvases.$last.height', 'hoogte')
+    add_field('fixed.sequences.$last.canvases.$last.width', 'breedte')
 
     ### structure images
     set_array('fixed.sequences.$last.canvases.$last.images')
@@ -68,7 +68,7 @@ do list(path: label_en_id, var: l)
     copy_field('fixed.sequences.$last.canvases.$last.@id','fixed.sequences.$last.canvases.$last.images.$last.on')
 
     ### structure resource
-    set_hash('fixed.sequences.$last.canvases.$last.images.$last.resource','@id': 'id','@type': 'dctypes:Image', 'format': 'image/jpeg','hoogte': 'hoogte','breedte': 'breedte')
+    set_hash('fixed.sequences.$last.canvases.$last.images.$last.resource','@id': 'id','@type': 'dctypes:Image', 'format': 'image/jpeg','height': 'hoogte','width': 'breedte')
     copy_field('l.id', 'fixed.sequences.$last.canvases.$last.images.$last.resource.@id')
     prepend('fixed.sequences.$last.canvases.$last.images.$last.resource.@id', 'http://free.iiifhosting.com/iiif/')
     append('fixed.sequences.$last.canvases.$last.images.$last.resource.@id', '/full/full/0/default.jpg')
