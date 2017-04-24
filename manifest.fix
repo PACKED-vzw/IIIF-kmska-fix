@@ -17,7 +17,7 @@ add_field('image-motivation', 'sc:painting')
 add_field('resource-type', 'dctypes:Image')
 add_field('format', 'image/jpeg')
 add_field('service-context', 'http://iiif.io/api.image/2/context.json')
-add_field('service-profile', 'http://iiif.io/api/image/2/profiles/level2.json')
+add_field('service-profile', 'http://iiif.io/api/image/2/profiles/level1.json')
 
 ### structure manifest
 copy_field('iiif-context', 'fixed.@context')
