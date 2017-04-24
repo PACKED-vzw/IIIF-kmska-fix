@@ -6,10 +6,10 @@ hash('fixed')
 
 ### set fixed values
 add_field('url', 'http://free.iiifhosting.com/iiif/')
-add_field('iiif-context', 'http://iiif.io/presentation/2/context.json')
-add_field('manifest-type', 'sc:Manifest')
 add_field('attribution', 'KMSKA')
 add_field('logo', 'http://www.kmska.be/static/site_images/lgo_kmska.gif')
+add_field('iiif-context', 'http://iiif.io/presentation/2/context.json')
+add_field('manifest-type', 'sc:Manifest')
 add_field('sequence-type', 'sc:Sequence')
 add_field('canvas-type', 'sc:Canvas')
 add_field('image-type', 'oa:Annotation')
