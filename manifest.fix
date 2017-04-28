@@ -103,3 +103,4 @@ copy_field('service-profile', 'fixed.sequences.$last.canvases.*.images.$last.res
 
 retain(fixed)
 move_field(fixed, .)
+
