@@ -14,7 +14,7 @@ Deze repository levert een Catmandu fix om een csv-bestand om te zetten naar een
 1. Installeer [Catmandu](http://librecat.org/)
 2. Installeer de Perl-module *Catmandu-Store-REST*: `cpan install Catmandu::Store::REST`
 3. Zorg dat je CSV-bestand opgesteld is volgens de [Opbouw CSV-bestand](#csv) (of [pas de fix aan](#fix) volgens de opbouw van je eigen csv-bestand)
-4. [Pas de manifest fix aan](#fix).
+4. [Pas de manifest fix aan](#fix)
 5. start Catmandu en voer volgend script uit: `Catmandu convert csv to json --fix manifest.fix --array 0 --line_delimeted 1 < path-naar-je-csv-bestand | split -l 1 --additional-suffix=".json"`
 
 Op deze manier krijg je per lijn in je csv-bestand een manifest-json.
@@ -66,7 +66,7 @@ prepend('fixed.sequences.$last.canvases.$last.images.$last.resource.@id', 'url-n
 
 Zie [IIIF Prestentation API 2.1](http://iiif.io/api/presentation/2.1/) voor meer info over de structuur van een manifest-bestand.
 
-##Verbeterpunten<a id="beter"></a>
+## Verbeterpunten<a id="beter"></a>
 - bestandsnamen van de manifest-bestanden die je nu krijgt via de `split`-commando.
 - url naar je IIIF-server moet je maar op één plaats aanpassen.
 - In de json-bestanden hebben de velden geen vaste volgorde. Het zou mogelijk moeten zijn om dit wel vast te leggen zodat manifest-bestanden eenvoudiger te vergelijken zijn.
