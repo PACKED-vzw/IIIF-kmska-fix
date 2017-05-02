@@ -39,7 +39,7 @@ Zie [manifest.fix](https://github.com/PACKED-vzw/IIIF-kmska-fix/blob/master/mani
 Een aantal variabelen worden vastgelegd in het begin van het document. Pas de eerste drie variabelen aan (*url*, *attribution*, *logo*).
 ```
 add_field('url', 'url-van-je-IIIF-server')
-add_field('attribution', 'naam-van-je-organisaite')
+add_field('attribution', 'naam-van-je-organisatie')
 add_field('logo', 'url-naar-je-logo')
 add_field('iiif-context', 'http://iiif.io/presentation/2/context.json')
 add_field('manifest-type', 'sc:Manifest')
