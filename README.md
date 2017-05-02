@@ -53,7 +53,7 @@ add_field('service-profile', 'http://iiif.io/api/image/2/profiles/level1.json')
 ```
 De rest van het bestand is verantwoordelijk voor de opbouw van de manifest-structuur, achtereenvolgens: manifest, sequence, canvas, images en resources.
 
-Via een loop wordt per afbeelding een canvas met de juiste images en resources gemaakt. De breedte en de hoogte van de afbeeldingen worden via de [IIIF Image API](http://iiif.io/api/image/2.1/) opgehaald. Hiervoor werd de Perl-module [Catmandu-Store-REST](https://github.com/PACKED-vzw/Catmandu-Store-REST) geschreven.
+Via een loop wordt per afbeelding een canvas met de juiste images en resources gemaakt. De breedte en de hoogte van de afbeeldingen worden via de [IIIF Image API](http://iiif.io/api/image/2.1/) opgehaald. Hiervoor werd de Perl-module [Catmandu-Store-REST](http://search.cpan.org/~pieterdp/Catmandu-Store-REST-0.01/lib/Catmandu/Store/REST.pm) geschreven.
 
 Pas in de delen *canvas* en *resources* telkens de url aan naar de url van je eigen IIIF-server.
 ```
