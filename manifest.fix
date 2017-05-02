@@ -1,6 +1,9 @@
-### to do:
-### import json file for height and width (jsonfile = url+id+ '/image.json') OK
-### create json file for each manifest
+###
+### catmandu fix for converting a csv file to IIIF manifest file
+### requires Perlmodule Catmandu-Store-REST
+###
+### Authors: Pieter De Praetere and Nastasia Vanderperren (PACKED vzw, 2017)
+### 
 
 hash('fixed')
 
@@ -22,7 +25,6 @@ add_field('service-profile', 'http://iiif.io/api/image/2/profiles/level1.json')
 ### structure manifest
 copy_field('iiif-context', 'fixed.@context')
 paste('fixed.@id', 'url', 'id')    ## deze code werkt niet bij @id
-
 replace_all('fixed.@id', ' ', '')  ## in canvas, resource en service. waarom?
 append('fixed.@id', '/manifest.json')
 copy_field('manifest-type', 'fixed.@type')
@@ -51,7 +53,7 @@ do list(path: afbeeldingen, var: a)
     copy_field('a.1', 'label_en_id.$last.id')
 end
 
-### append label and id for each canvas
+### connect to the IIIF Image API
 do list(path: label_en_id, var: l)
 
     copy_field(l.id, l.lookup_id)
@@ -73,16 +75,15 @@ do list(path: label_en_id, var: l)
 
     ### structure images
     set_array('fixed.sequences.$last.canvases.$last.images')
+    copy_field('fixed.sequences.$last.canvases.$last.@id','fixed.sequences.$last.canvases.$last.images.$last.on')
     #copy_field('image-type', 'fixed.sequences.$last.canvases.$last.images.$append.@type')
     #copy_field('image-motivation', 'fixed.sequences.$last.canvases.$last.images.$last.motivation')
-    copy_field('fixed.sequences.$last.canvases.$last.@id','fixed.sequences.$last.canvases.$last.images.$last.on')
 
     ### structure resource
     set_hash('fixed.sequences.$last.canvases.$last.images.$last.resource','@id': 'id','@type': 'dctypes:Image', 'format': 'image/jpeg','height': 'hoogte','width': 'breedte')
     copy_field('l.id', 'fixed.sequences.$last.canvases.$last.images.$last.resource.@id')
     copy_field(l.lookup_id.height, 'fixed.sequences.$last.canvases.$last.images.$last.resource.height')
     copy_field(l.lookup_id.width, 'fixed.sequences.$last.canvases.$last.images.$last.resource.width')
-
     prepend('fixed.sequences.$last.canvases.$last.images.$last.resource.@id', 'http://free.iiifhosting.com/iiif/')
     append('fixed.sequences.$last.canvases.$last.images.$last.resource.@id', '/full/full/0/default.jpg')
     set_hash('fixed.sequences.$last.canvases.$last.images.$last.resource.service', '@context': 'context', '@id': 'id', 'profile': 'profile')
@@ -103,4 +104,3 @@ copy_field('service-profile', 'fixed.sequences.$last.canvases.*.images.$last.res
 
 retain(fixed)
 move_field(fixed, .)
-
