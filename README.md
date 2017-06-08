@@ -14,7 +14,7 @@ Deze repository levert een Catmandu fix om een csv-bestand om te zetten naar een
 2. Installeer de Perl-module *Catmandu-Store-REST*: `cpan install Catmandu::Store::REST`
 3. Zorg dat je CSV-bestand opgesteld is volgens de [Opbouw CSV-bestand](#csv) (of [pas de fix aan](#fix) volgens de opbouw van je eigen csv-bestand)
 4. [Pas de manifest fix aan](#fix)
-5. start Catmandu en voer volgend script uit: `catmandu convert csv to json --fix manifest.fix --array 0 --line_delimeted 1 < path-naar-je-csv-bestand | split -l 1 --additional-suffix=".json"`
+5. start Catmandu en voer volgend script uit: `catmandu convert csv to json --fix manifest.fix --array 0 --line_delimited 1 < path-naar-je-csv-bestand | split -l 1 --additional-suffix=".json"`
 
 Op deze manier krijg je per lijn in je csv-bestand een manifest-json.
 
