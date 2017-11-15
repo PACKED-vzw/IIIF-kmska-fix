@@ -55,7 +55,18 @@ De rest van het bestand is verantwoordelijk voor de opbouw van de manifest-struc
 
 Via een loop wordt per afbeelding een canvas met de juiste images en resources gemaakt. De breedte en de hoogte van de afbeeldingen worden via de [IIIF Image API](http://iiif.io/api/image/2.1/) opgehaald. Hiervoor werd de Perl-module [Catmandu-Store-REST](http://search.cpan.org/~pieterdp/Catmandu-Store-REST-0.01/lib/Catmandu/Store/REST.pm) geschreven.
 
-Pas in de delen *canvas* en *resources* telkens de url aan naar de url van je eigen IIIF-server.
+Pas in de delen *building canvases by looping*, *connect to the IIIF Image API*, *structure canvas* en *structure resource* telkens de url aan naar de url van je eigen IIIF-server.
+```
+add_field('t.id.first', 'url-naar-eigen-IIIF-server')
+```
+```
+lookup_in_store(
+  l.lookup_id,
+  REST,
+  base_url: 'url-naar-eigen-IIIF-server',
+  query_string: '/info.json'
+)
+```
 ```
 prepend('fixed.sequences.$last.canvases.$last.@id', 'url-naar-eigen-IIIF-server')
 ```
