@@ -3,6 +3,8 @@ IIIF KMSKA FIX
 
 Deze repository levert een Catmandu fix om een csv-bestand om te zetten naar een IIIF-manifestbestand.
 
+Update: dit kan veel eenvoudiger met de CSV module van Python gedaan worden.
+
 ## Inhoudstafel
 - [Hoe gebruiken?](#hoe)
 - [Opbouw CSV-bestand](#csv)
